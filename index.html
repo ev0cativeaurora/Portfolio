@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio</title>
+    <title>SAHIB Anouar - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- You can replace this with local files if needed -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -23,100 +23,102 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <button id="theme-toggle">🌙</button>
+                <button id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
             </nav>
         </div>
     </header>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="container">
-        <div class="hero-content-wrapper">
-            <div class="hero-image">
-                <!-- Replace with your actual image path -->
-                <img src="images/profile.png" alt="Profile Image">
-            </div>
-            <div class="hero-content">
-                <p class="hero-intro">Hello. I'm</p>
-                <h1>SAHIB Anouar</h1>
-                <h2>Data Scientist | Software Engineer</h2>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-light">Contact</a>
-                    <a href="#" class="btn btn-dark">Download CV</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content-wrapper">
+                <div class="hero-image">
+                    <!-- Replace with your actual image path -->
+                    <img src="images/profile.png" alt="Profile Image">
                 </div>
-                <div class="social-icons">
-                    <a href="https://github.com/ev0cativeaurora" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/anouar-s-045b87304/" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                <div class="hero-content">
+                    <p class="hero-intro">Hello. I'm</p>
+                    <h1>SAHIB Anouar</h1>
+                    <h2>Data Scientist | Software Engineer</h2>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-light">Contact</a>
+                        <a href="documents/SAHIB_ANOUAR_CV.pdf" class="btn btn-dark" target="_blank">Download CV</a>                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/ev0cativeaurora" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anouar-s-045b87304/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- About Section -->
-<section id="about" class="about">
-    <div class="container">
-        <div class="section-title">
-            <h2>About Me</h2>
-            <p>Get to know me better</p>
-        </div>
-        <div class="about-content">
-            <div class="about-text-box">
-                <p>Third-year engineering student with experience in Python, Java, C, SQL/MySQL, and data analysis through various projects. My skills in database management, data visualization, and teamwork with Git/GitLab have strengthened my problem-solving abilities. Passionate about data science, I am eager to apply my skills and continue learning.</p>
-                <p>I enjoy working on challenging problems and creating efficient solutions. Whether it's analyzing data to extract insights or building applications, I'm always excited to learn new technologies and methodologies.</p>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
             </div>
-            
-            <div class="about-stats">
-                <div class="stat-box">
-                    <h3>3+</h3>
-                    <p>Years Coding</p>
+            <div class="about-content">
+                <div class="about-text-box">
+                    <p>Third-year engineering student with experience in Python, Java, C, SQL/MySQL, and data analysis through various projects. My skills in database management, data visualization, and teamwork with Git/GitLab have strengthened my problem-solving abilities. Passionate about data science, I am eager to apply my skills and continue learning.</p>
+                    <p>I enjoy working on challenging problems and creating efficient solutions. Whether it's analyzing data to extract insights or building applications, I'm always excited to learn new technologies and methodologies.</p>
                 </div>
-                <div class="stat-box">
-                    <h3>10+</h3>
-                    <p>Projects</p>
-                </div>
-                <div class="stat-box">
-                    <h3>5+</h3>
-                    <p>Technologies</p>
+                
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3>3+</h3>
+                        <p>Years Coding</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>10+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>5+</h3>
+                        <p>Technologies</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Experience Section -->
-<section id="experience" class="experience">
-    <div class="container">
-        <div class="section-title">
-            <h2>Experience</h2>
-            <p>My academic projects and internships</p>
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience</h2>
+                <p>My academic projects and internships</p>
+            </div>
+            <div class="timeline">
+                <div class="experience-item">
+                    <h3>Technical Internship</h3>
+                    <span class="experience-company">Agadir, Morocco</span>
+                    <p>Development of a stock management application in Java (Swing) and MySQL, with Excel data import, PDF output generation, and user access management. Contributed to UI/UX design with Photoshop.</p>
+                    <div class="experience-date">2024 (3 months)</div>
+                </div>
+                <div class="experience-item">
+                    <h3>Disease Spread Simulator Project</h3>
+                    <span class="experience-company">ESIEA - Laval, France</span>
+                    <p>Development of an epidemiological simulator in C, featuring advanced data structures, probabilistic modeling (binomial law), and node transfer simulation. Used GNUPlot for visualization and Git/GitLab for collaborative work.</p>
+                    <div class="experience-date">2024</div>
+                </div>
+                <div class="experience-item">
+                    <h3>Smart Bus Project</h3>
+                    <span class="experience-company">Academic Project</span>
+                    <p>Designed and developed a bus seat reservation application, integrating Python and SQL for database management. Explored Flutter for mobile development and implemented optimized data structures.</p>
+                    <div class="experience-date">2023</div>
+                </div>
+            </div>
         </div>
-        <div class="timeline">
-            <div class="experience-item">
-                <h3>Technical Internship</h3>
-                <span class="experience-company">Agadir, Morocco</span>
-                <p>Development of a stock management application in Java (Swing) and MySQL, with Excel data import, PDF output generation, and user access management. Contributed to UI/UX design with Photoshop.</p>
-                <div class="experience-date">2024 (3 months)</div>
-            </div>
-            <div class="experience-item">
-                <h3>Disease Spread Simulator Project</h3>
-                <span class="experience-company">ESIEA - Laval, France</span>
-                <p>Development of an epidemiological simulator in C, featuring advanced data structures, probabilistic modeling (binomial law), and node transfer simulation. Used GNUPlot for visualization and Git/GitLab for collaborative work.</p>
-                <div class="experience-date">2024</div>
-            </div>
-            <div class="experience-item">
-                <h3>Smart Bus Project</h3>
-                <span class="experience-company">Academic Project</span>
-                <p>Designed and developed a bus seat reservation application, integrating Python and SQL for database management. Explored Flutter for mobile development and implemented optimized data structures.</p>
-                <div class="experience-date">2023</div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
@@ -209,159 +211,159 @@
     </section>
 
     <!-- Projects Section -->
-<section id="projects" class="projects">
-    <div class="container">
-        <div class="section-title">
-            <h2>Projects</h2>
-            <p>My professional experience</p>
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>My professional experience</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/smart-bus.jpg" alt="Smart Bus Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Bus</h3>
+                        <p>Design and development of a seat reservation application, integrating Python and SQL for database management. Exploration of Flutter for mobile development and implementation of optimized data structures.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Flutter</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/stock-management.jpg" alt="Coca Cola Stock Management">
+                    </div>
+                    <div class="project-content">
+                        <h3>Coca Cola Stock Management System</h3>
+                        <p>Development of a stock management application in Java (Swing) and MySQL, with Excel data import, PDF output generation, and user access management. Contribution to UI/UX with Photoshop.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Swing</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/disease-simulator.jpg" alt="Disease Spread Simulator">
+                    </div>
+                    <div class="project-content">
+                        <h3>Disease Spread Simulator</h3>
+                        <p>Development of an epidemiological simulator in C, with advanced manipulation of data structures, probabilistic modeling (binomial law), and simulation of node transfers. Use of GNUPlot for visualization.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C</span>
+                            <span class="project-tag">GNUPlot</span>
+                            <span class="project-tag">Git/GitLab</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Project</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/smart-bus.jpg" alt="Smart Bus Project">
-                </div>
-                <div class="project-content">
-                    <h3>Smart Bus</h3>
-                    <p>Design and development of a seat reservation application, integrating Python and SQL for database management. Exploration of Flutter for mobile development and implementation of optimized data structures.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">SQL</span>
-                        <span class="project-tag">Flutter</span>
-                    </div>
-                    <a href="#" class="btn btn-outline">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/stock-management.jpg" alt="Coca Cola Stock Management">
-                </div>
-                <div class="project-content">
-                    <h3>Coca Cola Stock Management System</h3>
-                    <p>Development of a stock management application in Java (Swing) and MySQL, with Excel data import, PDF output generation, and user access management. Contribution to UI/UX with Photoshop.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Java</span>
-                        <span class="project-tag">MySQL</span>
-                        <span class="project-tag">Swing</span>
-                    </div>
-                    <a href="#" class="btn btn-outline">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/disease-simulator.jpg" alt="Disease Spread Simulator">
-                </div>
-                <div class="project-content">
-                    <h3>Disease Spread Simulator</h3>
-                    <p>Development of an epidemiological simulator in C, with advanced manipulation of data structures, probabilistic modeling (binomial law), and simulation of node transfers. Use of GNUPlot for visualization.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">C</span>
-                        <span class="project-tag">GNUPlot</span>
-                        <span class="project-tag">Git/GitLab</span>
-                    </div>
-                    <a href="#" class="btn btn-outline">View Project</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Contact Section -->
-<section id="contact" class="contact">
-    <div class="container">
-        <div class="section-title">
-            <h2>Contact Me</h2>
-        </div>
-        
-        <div class="contact-container">
-            <!-- Contact Information -->
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+33 6 51 66 71 33</p>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>s.anouar.edu@gmail.com</p>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Laval, France</p>
-                    </div>
-                </div>
-                
-                <div class="decoration-circles">
-                    <div class="circle circle-gray"></div>
-                    <div class="circle circle-dark"></div>
-                </div>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
             </div>
             
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" class="form-control" placeholder="">
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+33 6 51 66 71 33</p>
                         </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" class="form-control" placeholder="">
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>s.anouar.edu@gmail.com</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Laval, France</p>
                         </div>
                     </div>
                     
-                    <div class="form-row">
+                    <div class="decoration-circles">
+                        <div class="circle circle-gray"></div>
+                        <div class="circle circle-dark"></div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" class="form-control" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                        
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" placeholder="">
+                            <label>Select Subject?</label>
+                            <div class="radio-options">
+                                <label class="radio-label">
+                                    <input type="radio" name="subject" checked>
+                                    <span class="radio-custom"></span>
+                                    General Inquiry
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="subject">
+                                    <span class="radio-custom"></span>
+                                    Job Opportunity
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="subject">
+                                    <span class="radio-custom"></span>
+                                    Collaboration
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="subject">
+                                    <span class="radio-custom"></span>
+                                    Project Request
+                                </label>
+                            </div>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Write your message.."></textarea>
                         </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Select Subject?</label>
-                        <div class="radio-options">
-                            <label class="radio-label">
-                                <input type="radio" name="subject" checked>
-                                <span class="radio-custom"></span>
-                                General Inquiry
-                            </label>
-                            <label class="radio-label">
-                                <input type="radio" name="subject">
-                                <span class="radio-custom"></span>
-                                Job Opportunity
-                            </label>
-                            <label class="radio-label">
-                                <input type="radio" name="subject">
-                                <span class="radio-custom"></span>
-                                Collaboration
-                            </label>
-                            <label class="radio-label">
-                                <input type="radio" name="subject">
-                                <span class="radio-custom"></span>
-                                Project Request
-                            </label>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="form-control" rows="4" placeholder="Write your message.."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-submit">Send Message</button>
-                </form>
+                        
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -371,9 +373,8 @@
                     <h3>Portfolio</h3>
                     <p>A showcase of my skills, projects, and experiences as an engineering student and data enthusiast.</p>
                     <div class="social-links">
-                        <a href="#">GitHub</a>
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Twitter</a>
+                        <a href="https://github.com/ev0cativeaurora" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/anouar-s-045b87304/" target="_blank">LinkedIn</a>
                     </div>
                 </div>
                 <div class="footer-links">

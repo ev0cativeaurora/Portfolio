@@ -10,17 +10,23 @@ if (mobileMenu) {
 
 // Theme toggle
 const themeToggle = document.getElementById('theme-toggle');
+const sunIcon = document.querySelector('.sun-icon');
+const moonIcon = document.querySelector('.moon-icon');
 
 themeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
-    themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    
+    // Update localStorage based on mode
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
 });
 
 // Check saved theme
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
-    themeToggle.textContent = '☀️';
 }
 
 // Scroll to top button
