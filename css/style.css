@@ -548,6 +548,37 @@ section {
     margin-bottom: 5px;
 }
 
+/* Project buttons styling */
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-source {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-source:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* For mobile responsive layout */
+@media (max-width: 400px) {
+    .project-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .project-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /* Updated Contact Section */
 .contact {
     padding: 80px 0;
